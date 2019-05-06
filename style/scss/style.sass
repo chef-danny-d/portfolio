@@ -1,0 +1,132 @@
+@import '_variables'
+
+#fullpage
+    $i: 0
+    @for $i from 0 to 4
+        #section#{$i}
+            background-color: $primary
+            padding-top: 0
+
+.uk
+    &-navbar
+        background: 
+            color: $secondary
+        z-index: 999
+        display: none;
+        &-nav
+            li
+                a
+                    color: $white
+                &:hover, &:focus
+                    a
+                        color: $white
+                        text-decoration: underline
+                &.uk-active
+                    ::after
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 5em
+                        height: 0.25em
+                        background: 
+                            color: $primary
+                        bottom: 1.5em
+                    a
+                        color: $primary
+    &-tile
+        &-container
+            width: 100%
+            overflow: hidden
+            &-text
+                opacity: 0.3  
+                font:
+                    size: 10em
+                    weight: 300
+        &-text
+            width: 70%
+    &-icon
+        &-container
+            display: flex
+            justify-content: space-evenly
+            width: 25%
+            align-items: center
+            margin: auto
+            &-icon
+                padding: 0.15em 1em
+                svg
+                    width: 2.5em
+#section1
+    .uk
+        &-column
+            &-1-2
+                width: 70%
+            &-one
+                &-img
+                    max-height: 50vh
+                    margin: auto
+                    display: block
+            &-two
+                display: flex
+                align-items: center
+                justify-content: center
+            &-divider
+                column:
+                    rule:
+                        color: $black
+
+
+.fp-tooltip
+    color: $secondary !important
+    display: block
+    opacity: 1
+    width: auto
+    font:
+        size: 2.15em !important
+        weight: 300 !important
+        family: inherit !important
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    padding: 
+        bottom: 0.75em
+        top: 0em
+        left: 0em
+        right: 0em
+#fp-nav 
+    margin-right: 5em
+    ul 
+        li 
+            height: 3em
+            a 
+                position: relative
+                padding-top: 0.4em
+                span
+                    background-color: $secondary
+                    border-radius: 0 !important
+                    width: 2em !important
+                    height: 0.4em !important
+                    top: 50% !important
+                    margin: -5px 0 0 -5px !important
+                &.active
+                    span
+                        border-radius: 0 !important
+                        width: 3em !important
+                        height: 0.4em !important 
+            &:hover
+                a.active
+                    span
+                        border-radius: 0 !important
+                        width: 2em !important
+                        height: 0.4em !important
+                a
+                    span
+                        width: 4em !important
+            &:first-child
+                .fp-tooltip
+                    
+            a.active + .fp-tooltip
+                width: auto
+                display: block
+                opacity: 1
+
+                   
+@import '_import'

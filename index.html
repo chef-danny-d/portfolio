@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Daniel B. Papp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/lib/fullpage.min.css" />
+        <script type="text/javascript" src="js/lib/fullpage.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link href="style/css/style.css" rel="stylesheet" >
+    </head>
+    <body>
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">Home</a></li>
+                    <li class=""><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="fullpage">
+            <div class="uk-tile uk-tile-default section" id="section0">
+                <div class="uk-tile-container"><h1 class="uk-tile-container-text">Hello,</h1></div> 
+                <h3 class="uk-tile-text">My name is <span class="bold">Daniel Papp</span>, I'm a part time UI Designer and Developer, and a full time student. I'm passionate about web component design and automating web projects. Check out some of my work in the projects section, and feel free to contact me via email or LinkedIn.</h3>
+                <div class="uk-icon-container">
+                    <a class="uk-icon-container-icon" href="https://github.com/chef-danny-d" target="_blank" uk-icon="github"></a>
+                    <a class="uk-icon-container-icon" href="https://www.linkedin.com/in/daniel-papp-812b8ab4/" target="_blank" uk-icon="linkedin"></a>
+                    <a class="uk-icon-container-icon" href="mailto:daniel_papp@outlook.com" uk-icon="mail"></a>
+                </div>
+                
+            </div>
+            <div class="uk-tile uk-tile-default section" id="section1">
+                <div class="uk-tile-container"><h1 class="uk-tile-container-text">About</h1></div> 
+                <div class="uk-column-1-2 uk-column-divider">
+                    <div class="uk-column-one">
+                        <img class="uk-column-one-img" src="img/profile.min.jpg" alt="profile picture of Daniel Papp">
+                    </div>
+                    <div class="uk-column-two">
+                        <h4 class="uk-column-two-text">I'm an experienced Front-End Developer with a demonstrated history of working in the Software Engineering field both professionally and on a contract basis. Skilled in UI Development, UI Design, and WordPress Web Development. I'm studying at Old Dominion University, majoring in Information Systems and Technologies with a double minor in Web Development and Cyber Security. My outside work hobbies include weight-lifting, soccer and pizza critiquing. My main focus after college is to brand myself and network in the web development industry to boost my freelance inquiries.</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="uk-tile uk-tile-default section" id="section2">
+                <div class="uk-tile-container"><h1 class="uk-tile-container-text">Projects</h1></div> 
+                
+            </div>
+            <div class="uk-tile uk-tile-default section" id="section3">
+                <div class="uk-tile-container"><h1 class="uk-tile-container-text">Contact</h1></div> 
+                
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js" 
+                integrity="sha256-AINUlF7RFhEIU37MsMWXfqC9AlpDnmW8xp1NUfEa8io=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js" 
+                integrity="sha256-T3+0YjpPZWQR6G5L8KOHWj/T6gGfMj1CPHDYDp0z3eE=" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+                    navigation: true,
+                    navigationPosition: 'right',
+                    navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
+                    responsiveWidth: 900,
+                    afterResponsive: function(isResponsive){
+                        
+                    }
+    
+                });
+            });
+        </script>
+    </body>
+</html>
